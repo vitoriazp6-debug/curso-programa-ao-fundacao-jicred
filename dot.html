@@ -9,21 +9,74 @@
     <script src='main.js'></script>
 </head>
 <body>
-   <form action="">
-<h1>Emprega Mais</h1>
-<p>Conectando talentos a oportunidades na sua região.</p>
-<h2>Cadastre seu currículo</h2>
-<p>Preencha seus dados com atenção. Empresas parceiras consultam este formulário para entrar em contato com candidatos.</p>
-<h3>Dados pessoais</h3>
-<label for="nome">Nome completo</label>
-<input type="name"> <br>
-<label for="email">email</label> <br>
-<input type="email"> <br>
-<label for="crie uma senha de acesso">senha</label>
-<input type="password" name="senha" id="password"><br>
-<label for="telefone(somente números)">números</label> <br>
-<input type="tel" name="telefone" id="telefone"> <br>
+   <!DOCTYPE html>
+<html lang='en'>
 
-</form> 
+    <form>
+  <h1>Emprega Mais</h1>
+  <p>Conectando talentos a oportunidades na sua região.</p>
+
+  <h2>Cadastre seu currículo</h2>
+  <p>Preencha seus dados com atenção. Empresas parceiras consultam este formulário para entrar em contato com você.</p>
+
+  <h3>Dados pessoais</h3>
+  
+  <label>Nome completo: <input type="text"></label><br><br>
+  
+  <label>Email: <input type="email"></label><br><br>
+  
+  <label>Crie uma senha de acesso: <input type="password"></label><br><br>
+  
+  <label>Telefone (somente números): <input type="text"></label><br><br>
+  
+  <label>Data de nascimento: <input type="date" value="2026-06-25"></label><br><br>
+  
+  <label>Disponibilidade de horário:</label>
+  <input type="radio" name="horario"> Período integral
+  <input type="radio" name="horario"> Meio período
+  <input type="radio" name="horario"> Fins de semana
+  <br><br>
+
+  <h3>Perfil profissional</h3>
+
+  <label>Escolaridade:</label>
+  <select>
+    <option>Ensino fundamental</option>
+    <option>Ensino fundamental</option>
+    <option>Ensino medio</option>
+  </select>
+  <br><br>
+
+  <label>Cidade onde deseja trabalhar:</label>
+  <select>
+    <option>São Paulo</option>
+     <option>belo horizonte</option>
+      <option>Salvador
+         <option>recife
+        
+  </select>
+  <br><br>
+
+  <label>Áreas de interesse:</label>
+  <input type="checkbox"> Vendas
+  <input type="checkbox"> Administrativo
+  <input type="checkbox"> Tecnologia
+  <input type="checkbox"> Atendimento
+</form>
+
+ <label>Fale sobre sua experiência e habilidades:</label><br>
+  <textarea rows="5" cols="40"></textarea>
+  <br><br>
+
+  <label>Anexe seu currículo em PDF: <input type="file"></label>
+  <br><br>
+
+  <input type="submit" value="Enviar currículo">
+  <input type="reset" value="Limpar formulário">
+  <input type="button" value="Ver todas as vagas">
+</form>
+
+
+
 </body>
 </html>
