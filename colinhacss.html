@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Topics - Skeleton</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f2f4f8;
+        color: #1f2937;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .topo {
+        background-color: #ffffff;
+        padding: 24px 32px;
+        border-bottom: 2px solid #e5e7eb;
+        margin-bottom: 24px;
+      }
+
+      .titulo-pagina {
+        font-size: 28px;
+        font-weight: bold;
+        color: #16a34a;
+        margin-bottom: 6px;
+      }
+
+      .subtitulo-pagina {
+        font-size: 15px;
+        color: #6b7280;
+      }
+
+      .conteudo {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+
+      .topico {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+      }
+
+      .topico-titulo {
+        font-size: 22px;
+        margin-bottom: 12px;
+        color: #111827;
+      }
+
+      .rodape {
+        background-color: #1f2937;
+        color: #e5e7eb;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .rodape-texto {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <h1 class="titulo-pagina">Colinha de CSS</h1>
+      <p class="subtitulo-pagina">
+        Use este HTML e aplique o CSS olhando a versão com estilo.
+      </p>
+    </header>
+
+    <main class="conteudo">
+      <section class="topico">
+        <h2 class="topico-titulo">1. Cores e tipografia</h2>
+        <p class="texto-normal">Este parágrafo usa a fonte padrão.</p>
+        <p class="texto-destaque">Este texto está em negrito e vermelho.</p>
+        <p class="texto-grande">Este texto é maior e centralizado.</p>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">2. Background, padding, margin e border</h2>
+        <div class="caixa-azul">Caixa azul com padding e borda sólida.</div>
+        <div class="caixa-amarela">
+          Caixa amarela com margin e borda tracejada.
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">3. Display flex</h2>
+        <p class="topico-descricao">Elementos alinhados em linha:</p>
+        <div class="flex-linha">
+          <div class="item-flex item-vermelho">1</div>
+          <div class="item-flex item-verde">2</div>
+          <div class="item-flex item-azul">3</div>
+        </div>
+        <p class="topico-descricao">Elementos alinhados em coluna:</p>
+        <div class="flex-coluna">
+          <div class="item-flex item-vermelho">A</div>
+          <div class="item-flex item-verde">B</div>
+          <div class="item-flex item-azul">C</div>
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">4. Display grid</h2>
+        <div class="grade">
+          <div class="item-grade">1</div>
+          <div class="item-grade">2</div>
+          <div class="item-grade">3</div>
+          <div class="item-grade">4</div>
+          <div class="item-grade">5</div>
+          <div class="item-grade">6</div>
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">5. Display block e none</h2>
+        <div class="bloco-visivel">
+          Este bloco aparece na página (display block).
+        </div>
+        <div class="bloco-escondido">
+          Este bloco está escondido (display none).
+        </div>
+        <p class="texto-normal">
+          O bloco escondido existe no HTML, mas não aparece na tela.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">6. Tamanhos fixos e em %</h2>
+        <div class="barra-fixixa">Largura fixa de 250px</div>
+        <div class="barra-porcentagem">Largura de 100%</div>
+        <div class="barra-meia">Largura de 50%</div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">7. Position relative e absolute</h2>
+        <div class="caixa-posicao">
+          <span class="icone-lupa">&#128269;</span>
+          <input class="campo-busca" type="text" placeholder="Buscar..." />
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="rodape-texto">Fundação Sonho Meu - Atividade de CSS</p>
+    </footer>
+  </body>
+</html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Topics - Skeleton</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f2f4f8;
+        color: #1f2937;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .topo {
+        background-color: #ffffff;
+        padding: 24px 32px;
+        border-bottom: 2px solid #e5e7eb;
+        margin-bottom: 24px;
+      }
+
+      .titulo-pagina {
+        font-size: 28px;
+        font-weight: bold;
+        color: #16a34a;
+        margin-bottom: 6px;
+      }
+
+      .subtitulo-pagina {
+        font-size: 15px;
+        color: #6b7280;
+      }
+
+      .conteudo {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+      }
+
+      .topico {
+        background-color: #ffffff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 2px solid #e5e7eb;
+        border-radius: 12px;
+      }
+
+      .topico-titulo {
+        font-size: 22px;
+        margin-bottom: 12px;
+        color: #111827;
+      }
+
+      .rodape {
+        background-color: #1f2937;
+        color: #e5e7eb;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .rodape-texto {
+        font-size: 14px;
+      }
+
+      .texto-destaque {
+        color: red;
+        font-weight: bold;
+      }
+      .texto-grande {
+        font-size: 20px;
+        text-align: center;
+      }
+      .caixa-azul {
+        background-color: #add8e6;
+        padding: 10px;
+        border: 2px solid blue;
+      }
+      .caixa-amarela {
+        background-color: #ffc800;
+        padding: 10px;
+        margin: 10px;
+        border: 2px dashed #f78310;
+      }
+      .flex-linha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .flex-coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .item-flex.item-vermelho {
+        background-color: #b30e0e;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-verde {
+        background-color: #0c830c;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-azul {
+        background-color: #0d1eb8;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+      }
+
+      .item-grade {
+        background-color: #e00f82;
+        color: #fcfcfc;
+
+        text-align: center;
+        border-radius: 10px;
+      }
+      flex-linha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .flex-coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .item-flex.item-vermelho {
+        background-color: #b30e0e;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-verde {
+        background-color: #0c830c;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-azul {
+        background-color: #0d1eb8;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+      }
+
+      .item-grade {
+        background-color: #e00f82;
+        color: #fcfcfc;
+
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .flex-linha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+      }
+      .flex-coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .item-flex.item-vermelho {
+        background-color: #b30e0e;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-verde {
+        background-color: #0c830c;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .item-flex.item-azul {
+        background-color: #0d1eb8;
+        color: #fcfcfc;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+      }
+
+      .item-grade {
+        background-color: #e00f82;
+        color: #fcfcfc;
+
+        text-align: center;
+        border-radius: 10px;
+      }
+      .bloco-visivel {
+        display: block;
+        background-color: #e2f9e6;
+        border: 1px solid #00911f;
+        padding: 12px;
+        margin-bottom: 10px;
+        font-family: Arial, sans-serif;
+      }
+
+      .barra-fixixa {
+        width: 250px;
+        background-color: #3b82f6;
+        color: white;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 6px;
+      }
+      .barra-porcentagem {
+        width: 100%;
+        background-color: #15a877;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        border-radius: 6px;
+      }
+
+      .barra-meia {
+        width: 50%;
+        background-color: #f59e0b; /* Cor laranja/amarela */
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+      }
+      .caixa-posicao {
+        position: relative;
+        width: 600px;
+        margin-top: 20px;
+      }
+      .campo-busca {
+        width: 233px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .icone-lupa {
+        position: absolute;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topo">
+      <h1 class="titulo-pagina">Colinha de CSS</h1>
+      <p class="subtitulo-pagina">
+        Use este HTML e aplique o CSS olhando a versão com estilo.
+      </p>
+    </header>
+
+    <main class="conteudo">
+      <section class="topico">
+        <h2 class="topico-titulo">1. Cores e tipografia</h2>
+        <p class="texto-normal">Este parágrafo usa a fonte padrão.</p>
+        <p class="texto-destaque">Este texto está em negrito e vermelho.</p>
+        <p class="texto-grande">Este texto é maior e centralizado.</p>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">2. Background, padding, margin e border</h2>
+        <div class="caixa-azul">Caixa azul com padding e borda sólida.</div>
+        <div class="caixa-amarela">
+          Caixa amarela com margin e borda tracejada.
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">3. Display flex</h2>
+        <p class="topico-descricao">Elementos alinhados em linha:</p>
+        <div class="flex-linha">
+          <div class="">item-flex item-vermelho1</div>
+          <div class="item-flex item-verde">2</div>
+          <div class="item-flex item-azul">3</div>
+        </div>
+        <p class="topico-descricao">Elementos alinhados em coluna:</p>
+        <div class="flex-coluna">
+          <div class="item-flex item-vermelho">A</div>
+          <div class="item-flex item-verde">B</div>
+          <div class="item-flex item-azul">C</div>
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">4. Display grid</h2>
+        <div class="grade">
+          <div class="item-grade">1</div>
+          <div class="item-grade">2</div>
+          <div class="item-grade">3</div>
+          <div class="item-grade">4</div>
+          <div class="item-grade">5</div>
+          <div class="item-grade">6</div>
+        </div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">5. Display block e none</h2>
+        <div class="bloco-visivel">
+          Este bloco aparece na página (display block).
+        </div>
+        <div class="bloco-escondido">
+          Este bloco está escondido (display none).
+        </div>
+        <p class="texto-normal">
+          O bloco escondido existe no HTML, mas não aparece na tela.
+        </p>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">6. Tamanhos fixos e em %</h2>
+        <div class="barra-fixixa">Largura fixa de 250px</div>
+        <div class="barra-porcentagem">Largura de 100%</div>
+        <div class="barra-meia">Largura de 50%</div>
+      </section>
+
+      <section class="topico">
+        <h2 class="topico-titulo">7. Position relative e absolute</h2>
+        <div class="caixa-posicao">
+          <span class="icone-lupa">&#128269;</span>
+          <input class="campo-busca" type="text" placeholder="Buscar..." />
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p class="rodape-texto">Fundação Sonho Meu - Atividade de CSS</p>
+    </footer>
+  </body>
+</html>
