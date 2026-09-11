@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fundação Sonho Meu</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #20263a;
+        background: #ffffff;
+      }
+
+      .inicio {
+        height: 650px;
+
+        display: flex;
+        align-items: flex-end;
+
+        padding: 0 0 80px 13%;
+
+        color: white;
+
+        background:
+          radial-gradient(circle at 25% 45%, #d17687 0%, transparent 48%),
+          radial-gradient(circle at 70% 25%, #e9ddd9 0%, transparent 55%),
+          linear-gradient(135deg, #614237 0%, #b38e91 55%, #b69770 100%);
+      }
+
+      .inicio-conteudo {
+        width: 600px;
+      }
+
+      .inicio h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 56px;
+        line-height: 1.05;
+        font-weight: bold;
+
+        margin-bottom: 12px;
+      }
+
+      .inicio p {
+        font-size: 15px;
+        line-height: 1.45;
+
+        width: 430px;
+
+        margin-bottom: 25px;
+      }
+
+      .botao {
+        display: inline-block;
+
+        background: #20c88a;
+        color: white;
+
+        text-decoration: none;
+
+        font-size: 12px;
+        font-weight: bold;
+
+        padding: 12px 21px;
+
+        border-radius: 5px;
+      }
+
+      .botao:hover {
+        background: #18b77c;
+      }
+
+      .projetos {
+        padding: 65px 12% 60px;
+        background: #fff;
+      }
+
+      .projetos h2 {
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 43px;
+
+        margin-bottom: 8px;
+      }
+
+      .subtitulo {
+        color: #777;
+
+        font-size: 15px;
+
+        margin-bottom: 32px;
+      }
+
+      /* CARDS */
+
+      .cards {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+      }
+
+      .card {
+        background: #ffffff;
+
+        border-radius: 13px;
+
+        overflow: hidden;
+
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      }
+
+      .imagem {
+        height: 175px;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .educacao {
+        background-image: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80");
+      }
+
+      .comunidade {
+        background-image: url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop");
+      }
+
+      .cultura {
+        background-image: url("https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=900&q=80");
+      }
+
+      .card-conteudo {
+        padding: 18px 20px 22px;
+      }
+
+      .card h3 {
+        font-size: 17px;
+
+        margin-bottom: 7px;
+      }
+
+      .card p {
+        color: #777;
+
+        font-size: 13px;
+
+        line-height: 1.55;
+      }
+
+      .sobre {
+        text-align: center;
+
+        padding: 95px 20px 105px;
+
+        max-width: 900px;
+
+        margin: auto;
+      }
+
+      .sobre h2 {
+        font-family: Georgia, "Times New Roman", serif;
+
+        font-size: 40px;
+
+        margin-bottom: 30px;
+      }
+
+      .sobre p {
+        color: #777;
+
+        font-size: 15px;
+
+        line-height: 1.55;
+
+        margin-bottom: 22px;
+      }
+
+      footer {
+        height: 78px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        color: white;
+
+        font-size: 12px;
+
+        background: linear-gradient(90deg, #11a9c0, #008b82);
+      }
+
+      @media (max-width: 800px) {
+        .inicio {
+          height: 600px;
+
+          padding: 0 30px 60px;
+        }
+
+        .inicio-conteudo {
+          width: 100%;
+        }
+
+        .inicio h1 {
+          font-size: 43px;
+        }
+
+        .inicio p {
+          width: 100%;
+        }
+
+        .projetos {
+          padding: 55px 25px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .sobre {
+          padding: 70px 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="inicio">
+      <div class="inicio-conteudo">
+        <h1>Fundação Sonho Meu</h1>
+
+        <p>
+          Educação, cuidado e oportunidades para transformar o futuro de
+          crianças e famílias.
+        </p>
+
+        <a href="#projetos" class="botao"> Conhecer projetos </a>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>O que fazemos</h2>
+
+      <p class="subtitulo">
+        Conheça as frentes de atuação que sustentam o dia a dia da fundação.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="imagem educacao"></div>
+
+          <div class="card-conteudo">
+            <h3>Educação</h3>
+
+            <p>
+              Oficinas, reforço escolar e atividades que estimulam curiosidade e
+              aprendizado.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imagem comunidade"></div>
+
+          <div class="card-conteudo">
+            <h3>Comunidade</h3>
+
+            <p>
+              Ações com famílias e voluntários para fortalecer vínculos e
+              solidariedade.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="imagem cultura"></div>
+
+          <div class="card-conteudo">
+            <h3>Cultura e esporte</h3>
+
+            <p>
+              Arte, música e esporte como caminhos de expressão, saúde e
+              pertencimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre">
+      <h2>Por que existimos</h2>
+
+      <p>
+        A Fundação Sonho Meu nasceu para criar ambientes seguros e acolhedores
+        onde cada criança possa descobrir seu potencial. Acreditamos que o
+        acesso à educação, à cultura e ao cuidado diário abre portas para um
+        futuro com mais dignidade e oportunidades.
+      </p>
+
+      <p>
+        Com o apoio de educadores, voluntários e parceiros, construímos projetos
+        contínuos que acompanham o desenvolvimento das crianças e fortalecem as
+        famílias ao longo do ano.
+      </p>
+    </section>
+
+    <footer>Fundação Sonho Meu © 2026 - Atividade de Landing Page</footer>
+  </body>
+</html>
