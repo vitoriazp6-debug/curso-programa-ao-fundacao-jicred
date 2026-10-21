@@ -5,25 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page Title</title>
     <link rel="stylesheet" href="main.css" />
+
+<style>
+.titulo-foto{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 400px;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  
+}
+
+
+ .titulo-foto-linha {
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ color: aliceblue;
+ }
+
+    .sobre-mim {
+  position: relative;
+  text-align: center;
+  
+}
+
+.sobre-mim::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 37%;
+  height: 2px;
+  background-color: rgb(253, 253, 253);  
+  z-index: 0;  
+}
+
+
+
+.sobre-mim::after{
+content: "";
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 37%;
+  height: 2px;
+  background-color: white;  
+  z-index: 0;  
+}
+
+
+
+
+.sobre-mim span {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  padding: 0 15px;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+  
+
+
+
+
+
   </head>
   <body>
-    <h1>ketlly Vitória Alves Da Silva</h1>
-    <img
-      src="fotoo.jpeg"
-      style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover"
-    />
-
+    
+    
+    <div class="titulo-foto">
+      <h1>ketlly Vitória Alves Da Silva</h1>
+      <img
+        src="fotoo.jpeg"
+        style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover"
+      />
+    </div>
     <br />
     <br />
-    <h2>aprendendo programação</h2>
+    <h3>aprendendo programação</h3>
     <br />
-    <h4>
-      Estudante do 1 ano do ensino médio. Estudo na fundação jicred- período da
+    <h3>
+      Estudante do 1 ano do ensino médio. Estudo na fundação ji-cred período da
       manhã, faço curso de programação às terças e quintas-feiras no período
       nortuno.
-    </h4>
-    <h4>curiosidade sobre mim:</h4>
+    </h3>
+<div class=" sobre-mim"><h2> sobre mim</h2></div>
+
+  
     <br />
+
     <h4>
       Sou uma pessoas muito focada nos meus objetivos e gosto de me dedicar no
       eu que faço. Participo do Fj NEWS, onde tenho a oportunidade de registrar
@@ -32,5 +122,5 @@
       estar com as pessoas que fazem parte da minha vida. Ao mesmo tempo, sou
       bastante emotiva.
     </h4>
-  </body>
+    
 </html>
